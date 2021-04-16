@@ -5,25 +5,8 @@ public class School {
   ArrayList<Student> students = new ArrayList<>();
 
   public void runMenu() {
-<<<<<<< HEAD
     int choice;
     boolean keepRunning = true;
-=======
-    String[] menuItems = new String[5];
-
-  void removeStudent(){}
-
-    menuItems[0] = "1. View Studentlist";
-    menuItems[1] = "2. Add student to Studentlist";
-    menuItems[2] = "3. Remove Student From Studentlist";
-    menuItems[3] = "4. View Grades";
-    menuItems[4] = "9. Quit";
-
-    ui.getMenuOption("Student Menu", "Please choose an option", menuItems);
-
-    int choice = 0;
-    boolean keepRunning;
->>>>>>> 09d1637a46944474bd048fddf97c5cc0763aba41
 
     do {
       ui.printMenu();

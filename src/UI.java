@@ -40,4 +40,9 @@ public class UI {
       System.out.println(students.get(i).getExams());
     }
   }
+
+  void returnMessage(String message){
+    System.out.println(message);
+
+  }
 }
