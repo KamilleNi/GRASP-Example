@@ -5,26 +5,15 @@ public class School {
   ArrayList<Student> students = new ArrayList<>();
 
   public void runMenu() {
-    String[] menuItems = new String[5];
-
-  void removeStudent(){}
-    menuItems[0] = "1. View Studentlist";
-    menuItems[1] = "2. Add student to Studentlist";
-    menuItems[2] = "3. Remove Student From Studentlist";
-    menuItems[3] = "4. View Grades";
-    menuItems[4] = "9. Quit";
-
-    ui.getMenuOption("Student Menu", "Please choose an option", menuItems);
-
-    int choice = 0;
-    boolean keepRunning;
+    int choice;
+    boolean keepRunning = true;
 
     do {
       ui.printMenu();
       choice = ui.getMenuOption();
       switch (choice) {
         case 1:
-          ui.showStudentList();
+          ui.showStudentList(students);
           break;
         case 2:
           registerStudent();
@@ -33,7 +22,7 @@ public class School {
           removeStudent();
           break;
         case 4:
-          ui.showGrades();
+          ui.showGrades(students);
           break;
         case 9:
           ui.returnMessage("Quit!");
@@ -42,7 +31,7 @@ public class School {
         default:
           ui.returnMessage("This is not a valid choice.");
       }
-    } while (keepRunning)
+    } while (keepRunning);
   }
 
   void registerStudent() {
