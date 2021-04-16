@@ -6,4 +6,5 @@ public class School {
   void runMenu(){}
 
   void removeStudent(){}
+
 }
