@@ -40,11 +40,11 @@ public class School {
           ui.showGrades();
           break;
         case 9:
+          ui.returnMessage("Quit!");
           keepRunning = false;
           break;
         default:
-
-
+          ui.returnMessage("This is not a valid choice.");
       }
     } while (keepRunning)
   }
