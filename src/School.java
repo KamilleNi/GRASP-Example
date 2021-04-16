@@ -8,6 +8,7 @@ public class School {
     String[] menuItems = new String[5];
 
   void removeStudent(){}
+
     menuItems[0] = "1. View Studentlist";
     menuItems[1] = "2. Add student to Studentlist";
     menuItems[2] = "3. Remove Student From Studentlist";

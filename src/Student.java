@@ -25,11 +25,8 @@ public class Student {
     this.name = name;
   }
 
-<<<<<<< HEAD
-=======
   @Override
   public String toString() {
     return name + ", ID: " + iD;
   }
->>>>>>> f62c3d236304f76244d6cd673559a57e55962809
 }
