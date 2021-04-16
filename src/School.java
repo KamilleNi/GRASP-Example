@@ -7,6 +7,11 @@ public class School {
   public void runMenu() {
     String[] menuItems = new String[5];
 
+<<<<<<< HEAD
+
+  void removeStudent(){}
+=======
+>>>>>>> f62c3d236304f76244d6cd673559a57e55962809
     menuItems[0] = "1. View Studentlist";
     menuItems[1] = "2. Add student to Studentlist";
     menuItems[2] = "3. Remove Student From Studentlist";
