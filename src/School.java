@@ -7,8 +7,11 @@ public class School {
   public void runMenu() {
     String[] menuItems = new String[5];
 
+<<<<<<< HEAD
 
   void removeStudent(){}
+=======
+>>>>>>> f62c3d236304f76244d6cd673559a57e55962809
     menuItems[0] = "1. View Studentlist";
     menuItems[1] = "2. Add student to Studentlist";
     menuItems[2] = "3. Remove Student From Studentlist";
@@ -22,7 +25,27 @@ public class School {
 
     do {
       ui.printMenu();
-      choice = ui.readChoice();
+      choice = ui.getMenuOption();
+      switch (choice) {
+        case 1:
+          ui.showStudentList();
+          break;
+        case 2:
+          registerStudent();
+          break;
+        case 3:
+          removeStudent();
+          break;
+        case 4:
+          ui.showGrades();
+          break;
+        case 9:
+          keepRunning = false;
+          break;
+        default:
+          
+
+      }
     } while (keepRunning)
   }
 
