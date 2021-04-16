@@ -38,7 +38,7 @@ public class School {
           keepRunning = false;
           break;
         default:
-          
+
 
       }
     } while (keepRunning)
