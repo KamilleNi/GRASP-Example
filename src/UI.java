@@ -8,9 +8,10 @@ public class UI {
     System.out.println("MENU:");
     System.out.println("1. Enter Student");
     System.out.println("2. Show Student List");
-    System.out.println("3. Show Grads");
+    System.out.println("3. Show Grades");
     System.out.println("4. Remove Student");
     System.out.println("9. Exit");
+    System.out.println("Please choose an option:");
   }
 
   public int getMenuOption(){
@@ -21,6 +22,7 @@ public class UI {
       sc.nextLine();
     }
     choice = sc.nextInt();
+    sc.nextLine();
     return choice;
   }
 
@@ -33,6 +35,7 @@ public class UI {
     for(int i = 0; i < students.size(); i++){
       System.out.println("Student nr.: " + (i + 1) + ". " + students.get(i).toString());
     }
+    System.out.println();
   }
 
   public void showGrades(ArrayList<Student> students){
@@ -47,7 +50,7 @@ public class UI {
 
   public int studentNumber(){
     int number = 0;
-    sc.nextInt();
+    number = sc.nextInt();
     sc.nextLine();
 
     return number;
