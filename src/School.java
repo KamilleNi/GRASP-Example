@@ -7,6 +7,10 @@ public class School {
   public void runMenu() {
     String[] menuItems = new String[5];
 
+<<<<<<< HEAD
+  void removeStudent(){}
+
+=======
     menuItems[0] = "1. View Studentlist";
     menuItems[1] = "2. Add student to Studentlist";
     menuItems[2] = "3. Remove Student From Studentlist";
@@ -36,4 +40,5 @@ public class School {
 
   void removeStudent() {
   }
+>>>>>>> 55c3212d60606c86d7142d81ec49c7529d995d95
 }
