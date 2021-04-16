@@ -5,6 +5,7 @@ public class UI {
   Scanner sc = new Scanner(System.in);
 
   void printMenu(){
+    System.out.println("MENU:");
     System.out.println("1. Enter Student");
     System.out.println("2. Show Student List");
     System.out.println("3. Show Grads");
