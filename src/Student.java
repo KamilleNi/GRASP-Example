@@ -6,9 +6,10 @@ public class Student {
   Exam[] exams = new Exam[7];
 
   //CONSTRUCTOR
-  public Student(String name, String iD) {
+  public Student(String name, String iD, Exam[] exams) {
     setName(name);
     this.iD = iD;
+    setExams(exams);
   }
 
   //GETTER

@@ -13,16 +13,16 @@ public class School {
       choice = ui.getMenuOption();
       switch (choice) {
         case 1:
-          ui.showStudentList(students);
-          break;
-        case 2:
           registerStudent();
           break;
+        case 2:
+          ui.showStudentList(students);
+          break;
         case 3:
-          removeStudent();
+          ui.showGrades(students);
           break;
         case 4:
-          ui.showGrades(students);
+          removeStudent();
           break;
         case 9:
           ui.returnMessage("Quit!");
@@ -37,7 +37,17 @@ public class School {
   public void registerStudent() {
     String name = ui.getStudent("Enter name: ");
     String iD = ui.getStudent("Enter ID: ");
-    Student student = new Student(name, iD);
+
+    Exam[] exams = new Exam[7];
+
+    for (int i = 0; i < exams.length; i++) {
+      String examType = ui.getStudent("Enter exam: ");
+      ui.getStudent("Enter grade");
+      int grade = ui.studentNumber();
+      exams[i] = new Exam(examType, grade);
+    }
+
+    Student student = new Student(name, iD, exams);
     students.add(student);
   }
 
