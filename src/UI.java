@@ -29,15 +29,28 @@ public class UI {
     return sc.nextLine();
   }
 
-  void showStudentList(ArrayList<Student> students){
+  public void showStudentList(ArrayList<Student> students){
     for(int i = 0; i < students.size(); i++){
       System.out.println("Student nr.: " + (i + 1) + ". " + students.get(i).toString());
     }
   }
 
-  void showGrades(ArrayList<Student> students){
+  public void showGrades(ArrayList<Student> students){
     for(int i = 0; i < students.size(); i++){
       System.out.println(students.get(i).getExams());
     }
   }
+
+  public void returnMessage(String message){
+    System.out.println(message);
+  }
+
+  public int studentNumber(){
+    int number = 0;
+    sc.nextInt();
+    sc.nextLine();
+
+    return number;
+  }
+
 }
