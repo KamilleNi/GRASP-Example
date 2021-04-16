@@ -21,6 +21,9 @@ public class School {
     do {
       ui.printMenu();
       choice = ui.readChoice();
+      switch (choice) {
+
+      }
     } while (keepRunning)
   }
 
