@@ -34,7 +34,7 @@ public class UI {
     }
   }
 
-  void showGrads(ArrayList<Student> students){
+  void showGrades(ArrayList<Student> students){
     for(int i = 0; i < students.size(); i++){
       System.out.println(students.get(i).getExams());
     }
